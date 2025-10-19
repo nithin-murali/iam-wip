@@ -2,10 +2,28 @@ title: "I Am WIP"
 description: "Progress without pressure."
 url: "https://iamwip.blog"
 
+# Use Minimal Mistakes via remote_theme
 remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
+  - jekyll-include-cache
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Optional skin + Sass (you can add later)
+minimal_mistakes_skin: "default"
+sass:
+  style: compressed
+
+# Post defaults (optional)
+defaults:
+  - scope: { path: "", type: "posts" }
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
 
